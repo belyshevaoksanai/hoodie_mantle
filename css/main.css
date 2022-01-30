@@ -96,6 +96,20 @@ body, html {
   padding: var(--padding) 0;
 }
 
+.showcase__content-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../images/glow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: k-glow 1.8s ease-in-out infinite;
+}
+
 /* ANIMATIONS */
 
 @keyframes k-light {
@@ -107,5 +121,17 @@ body, html {
   }
   100% {
     opacity: .2;
+  }
+}
+
+@keyframes k-glow {
+  0% {
+    opacity: .6;
+  }
+  50% {
+    opacity: .8;
+  }
+  100% {
+    opacity: .6;
   }
 }
