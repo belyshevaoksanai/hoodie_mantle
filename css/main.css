@@ -22,7 +22,7 @@
 @font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; }
 @font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; }
 @font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; }
-@font-face { src: url("../fonts/assassin.woff2") format("woff2"); font-family: "assasin"; font-weight: 700; font-style: italic; }
+@font-face { src: url("../fonts/assassin.woff2") format("woff2"); font-family: "assasin-st"; font-weight: 700; font-style: italic; }
 
 /* GENERAL CSS SETTINGS */
 
@@ -108,6 +108,21 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   animation: k-glow 1.8s ease-in-out infinite;
+}
+
+.showcase__header {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  top: 40px;
+  font-family: assasin-st, 'sans-serif';
+  font-size: 32px;
+  color: rgba(255, 255, 255, .75);
+}
+
+.showcase__header span {
+  color: var(--accent);
 }
 
 /* ANIMATIONS */
